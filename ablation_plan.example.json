@@ -1,0 +1,30 @@
+{
+  "replicates": 3,
+  "default": {
+    "mode": "none"
+  },
+  "groups": [
+    {
+      "name": "full_graph_candidates",
+      "tasks": ["edu_001"],
+      "mode": "full"
+    },
+    {
+      "name": "without_db_only",
+      "tasks": ["edu_002", "edu_018"],
+      "mode": "selected",
+      "conditions": [
+        {
+          "name": "without_db",
+          "active_surfaces": ["graph", "kb"],
+          "replicates": 3
+        }
+      ]
+    },
+    {
+      "name": "screen_only",
+      "tasks": ["edu_020"],
+      "mode": "none"
+    }
+  ]
+}

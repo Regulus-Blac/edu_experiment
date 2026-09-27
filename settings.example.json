@@ -1,0 +1,22 @@
+{
+  "paths": {
+    "datamind": "DataMind",
+    "edu_sample": "edu_sample",
+    "output_dir": "edu_experiment/runs"
+  },
+  "llm": {
+    "api_base": "https://api.deepseek.com/",
+    "api_key": "填入推理 API key",
+    "protocol": "openai_chat_completions",
+    "model": "deepseek-v4-pro"
+  },
+  "embedding": {
+    "provider": "openai",
+    "api_base": "https://embedding-gateway.example/",
+    "api_key": "填入 embedding API key",
+    "model": "text-embedding-3-small"
+  },
+  "data": {
+    "profile": "edu_registrar"
+  }
+}

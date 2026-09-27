@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+
+settings.json
+runs/
+workspace_manifest.json
+.secret_fingerprint
